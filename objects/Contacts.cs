@@ -1,5 +1,6 @@
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
+// Imports System.Text.RegularExpressions;
+
 
 namespace AddressBook.Objects
 {
@@ -77,16 +78,26 @@ namespace AddressBook.Objects
       contactList.Clear();
     }
 
-        public static List<Contact> searchResults = new List<Contact> { };
-
-    public static Contact Search(string searchTerm){
-      foreach (Contact.GetName() in contactList)
-            {
-                if (System.Text.RegularExpressions.Regex.IsMatch) (GetName(), searchTerm){
-                    
-                }
-            }
-    }
+    //     public static string searchItem;
+    //
+    // public static void SetSearchItem(string term)
+    //     {
+    //         searchItem = "/";
+    //     }
+    //
+    // public static List<Contact> searchResults = new List<Contact> { };
+    //
+    //     RegexOptions options = RegexOptions.IgnoreCase;
+    //
+    // public static Contact Search(string searchTerm){
+    //   foreach (var Contact in contactList)
+    //         {
+    //             if (Regex.IsMatch(Contact.GetName(), searchTerm))
+    //             {
+    //                 searchResults.Add(Contact);
+    //             }
+    //         }
+    // }
 
   }
 }
