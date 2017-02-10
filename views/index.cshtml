@@ -12,3 +12,17 @@
 <div>
   <h4>Would you like to add another <a href="/contact/new">Contact</a>?</h4>
 </div>
+
+<div class="">
+  <form action="/delete" method="post">
+    <button type="submit" name="button">Delete All</button>
+  </form>
+</div>
+
+<div>
+  <h4>You may search for a contact</h4>
+  <form action="/search" method="post">
+    <label>Enter full name:</label>
+    <input type="text" name="searchitem">
+  </form>
+</div>

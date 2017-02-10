@@ -14,6 +14,12 @@ namespace AddressBook
         return View["index.cshtml", Contact.GetList()];
       };
 
+      Post["/delete"] = _ =>
+      {
+        Contact.ClearList();
+        return View["index.cshtml", Contact.GetList()];
+      };
+
       Get["/contact/{id}"] = parameter =>
       {
         Contact SelectedContact = Contact.Find(parameter.id);
