@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace AddressBook.Objects
 {
@@ -74,6 +75,17 @@ namespace AddressBook.Objects
     public static void ClearList()
     {
       contactList.Clear();
+    }
+
+        public static List<Contact> searchResults = new List<Contact> { };
+
+    public static Contact Search(string searchTerm){
+      foreach (Contact.GetName() in contactList)
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch) (GetName(), searchTerm){
+                    
+                }
+            }
     }
 
   }
