@@ -1,0 +1,14 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<div>
+  @foreach (var Contact in Model)
+  {
+    <li><a href="/contact/@Contact.GetId()" value=@Contact.GetId()> @Contact.GetName() </a></li>
+  }
+</div>
+
+<div>
+  <h4>Would you like to add another <a href="/contact/new">Contact</a>?</h4>
+</div>
