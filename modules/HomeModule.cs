@@ -18,6 +18,7 @@ namespace AddressBook
       {
         Dictionary<string, object> model = new Dictionary<string, object>();
         Contact SelectedContact = Contact.Find(parameter.id);
+        Contact.counter++;
         return View["contact.cshtml", model];
       };
 

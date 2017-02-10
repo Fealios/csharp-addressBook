@@ -4,6 +4,7 @@ namespace AddressBook.Objects
 {
   public class Contact
   {
+    public static int counter = 0;
     private string _name;
     private string _phone;
     private string _address;
@@ -15,7 +16,7 @@ namespace AddressBook.Objects
       SetName(name);
       SetPhone(phone);
       SetAddress(address);
-      _id = contactList.Count;
+      _id = counter;
     }
 
     public void SetName(string name)
@@ -60,7 +61,7 @@ namespace AddressBook.Objects
 
     public static Contact Find(int id)
     {
-      return contactList[id - 1];
+      return contactList[id];
     }
 
   }
