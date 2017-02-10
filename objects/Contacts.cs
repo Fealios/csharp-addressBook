@@ -17,6 +17,7 @@ namespace AddressBook.Objects
       SetPhone(phone);
       SetAddress(address);
       _id = counter;
+      counter++;
     }
 
     public void SetName(string name)
