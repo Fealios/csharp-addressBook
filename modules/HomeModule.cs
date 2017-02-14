@@ -17,7 +17,7 @@ namespace AddressBook
       Post["/delete"] = _ =>
       {
         Contact.ClearList();
-        return View["index.cshtml", Contact.GetList()];
+        return View["verifieddelete.cshtml"];
       };
 
       Get["/contact/{id}"] = parameter =>
@@ -35,7 +35,7 @@ namespace AddressBook
       {
         Contact newContact = new Contact(Request.Form["name"], Request.Form["phone"], Request.Form["address"]);
         Contact.GetList().Add(newContact);
-        return View["index.cshtml", Contact.GetList()];
+        return View["verifiedadd.cshtml"];
       };
     }
   }

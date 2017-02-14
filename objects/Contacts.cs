@@ -76,17 +76,17 @@ namespace AddressBook.Objects
     {
       contactList.Clear();
     }
-
-        public static List<Contact> searchResults = new List<Contact> { };
-
-    public static Contact Search(string searchTerm){
-      foreach (Contact.GetName() in contactList)
-            {
-                if (System.Text.RegularExpressions.Regex.IsMatch) (GetName(), searchTerm){
-                    
-                }
-            }
-    }
+    //
+    //     public static List<Contact> searchResults = new List<Contact> { };
+    //
+    // public static Contact Search(string searchTerm){
+    //   foreach (Contact.GetName() in contactList)
+    //         {
+    //             if (System.Text.RegularExpressions.Regex.IsMatch) (GetName(), searchTerm){
+    //
+    //             }
+    //         }
+    // }
 
   }
 }
