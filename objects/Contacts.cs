@@ -78,26 +78,5 @@ namespace AddressBook.Objects
       contactList.Clear();
     }
 
-    //     public static string searchItem;
-    //
-    // public static void SetSearchItem(string term)
-    //     {
-    //         searchItem = "/";
-    //     }
-    //
-    // public static List<Contact> searchResults = new List<Contact> { };
-    //
-    //     RegexOptions options = RegexOptions.IgnoreCase;
-    //
-    // public static Contact Search(string searchTerm){
-    //   foreach (var Contact in contactList)
-    //         {
-    //             if (Regex.IsMatch(Contact.GetName(), searchTerm))
-    //             {
-    //                 searchResults.Add(Contact);
-    //             }
-    //         }
-    // }
-
   }
 }

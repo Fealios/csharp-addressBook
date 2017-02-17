@@ -3,7 +3,7 @@
 }
 
 
-<div>
+<div id="contacts-holder">
   @foreach (var Contact in Model)
   {
     <li><a href="/contact/@Contact.GetId()" value=@Contact.GetId()> @Contact.GetName() </a></li>
@@ -11,19 +11,11 @@
 </div>
 
 <div>
-  <h4>Would you like to add another <a href="/contact/new">Contact</a>?</h4>
+  <h4>Would you like to <a href="/contact/new"><button type="button" class="btn-large">Add</button></a> another Contact?</h4>
 </div>
 
 <div class="">
   <form action="/delete" method="post">
-    <button type="submit" name="button">Delete All</button>
+    <button id="deleteall" class="btn-large" type="submit" name="button">Delete All</button>
   </form>
 </div>
-
-<!-- <div>
-  <h4>You may search for a contact</h4>
-  <form action="/search" method="post">
-    <label>Enter full name:</label>
-    <input type="text" name="searchitem">
-  </form>
-</div> -->
